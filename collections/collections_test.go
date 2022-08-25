@@ -2,9 +2,10 @@ package collections_test
 
 import (
 	"fmt"
-	"generics_example/collections"
+
 	"testing"
 
+	"github.com/danilovteodoro/slice-helper/collections"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

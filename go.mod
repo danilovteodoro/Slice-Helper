@@ -1,4 +1,4 @@
-module generics_example
+module github.com/danilovteodoro/slice-helper
 
 go 1.18
 

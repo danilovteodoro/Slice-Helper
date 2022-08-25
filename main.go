@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"generics_example/collections"
+
+	"github.com/danilovteodoro/slice-helper/collections"
 )
 
 type ProgrammingLanguage struct {
