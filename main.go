@@ -49,27 +49,26 @@ func main() {
 	fmt.Println()
 
 	fmt.Println("04 - Some")
-	shoudBeTrue := collections.Some(programmingLanguages, func(p ProgrammingLanguage) bool {
+	shouldBeTrue := collections.Some(programmingLanguages, func(p ProgrammingLanguage) bool {
 		return p.GithutRank == 7
 	})
 
-	shoudBeFalse := collections.Some(programmingLanguages, func(p ProgrammingLanguage) bool {
+	shouldBeFalse := collections.Some(programmingLanguages, func(p ProgrammingLanguage) bool {
 		return p.GithutRank == 4
 	})
-
-	fmt.Println("shoudBeTrue: ", shoudBeTrue, "shoudBeFalse: ", shoudBeFalse)
+	fmt.Println("shouldBeTrue: ", shouldBeTrue, "shouldBeFalse: ", shouldBeFalse)
 
 	fmt.Println()
 
 	fmt.Println("04 - Every")
-	shoudBeTrue = collections.Every(programmingLanguages, func(p ProgrammingLanguage) bool {
+	shouldBeTrue = collections.Every(programmingLanguages, func(p ProgrammingLanguage) bool {
 		return p.GithutRank < 10
 	})
 
-	shoudBeFalse = collections.Every(programmingLanguages, func(p ProgrammingLanguage) bool {
+	shouldBeFalse = collections.Every(programmingLanguages, func(p ProgrammingLanguage) bool {
 		return p.GithutRank > 4
 	})
-	fmt.Println("shoudBeTrue: ", shoudBeTrue, "shoudBeFalse: ", shoudBeFalse)
+	fmt.Println("shouldBeTrue: ", shouldBeTrue, "shouldBeFalse: ", shouldBeFalse)
 
 	fmt.Println()
 
@@ -77,5 +76,5 @@ func main() {
 	sumOfRankings := collections.Group(programmingLanguages, func(p ProgrammingLanguage, amount int) int {
 		return p.GithutRank + amount
 	})
-	fmt.Println("Some of Rankings: ", sumOfRankings)
+	fmt.Println("Sum of Rankings: ", sumOfRankings)
 }
