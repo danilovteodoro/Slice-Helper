@@ -14,7 +14,6 @@ type ProgrammingLanguage struct {
 	PyplRank     int
 }
 
-// add a comment
 var programmingLanguages = []ProgrammingLanguage{
 	{Id: 1, Name: "JavaScript", ReleasedYear: 1995, GithutRank: 1, PyplRank: 3},
 	{Id: 3, Name: "Java", ReleasedYear: 1995, GithutRank: 3, PyplRank: 2},
